@@ -35,14 +35,16 @@ namespace HR.LeaveManagement.Persistence.Repositories
 			return await _context.Set<T>().ToListAsync();
 		}
 
-		public Task<T> GetByIdAsync(int id)
+		public async Task<T> GetByIdAsync(int id)
 		{
-			throw new NotImplementedException();
+			return await _context.Set<T>().FindAsync(id);
 		}
 
-		public Task UpdateAsync(T entity)
+		public async Task UpdateAsync(T entity)
 		{
-			throw new NotImplementedException();
+			 //_context.Update(entity);
+			 _context.Entry(entity).State = EntityState.Modified;
+			await _context.SaveChangesAsync();
 		}
 
 	}
