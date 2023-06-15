@@ -36,6 +36,7 @@ namespace HR.LeaveManagement.Application.Features.LeaveType.Commands.UpdateLeave
 			}
 			// Convert to domain entity object
 			var leaveTypeToUpdate = _mapper.Map<Domain.LeaveType>(request);
+			var dateString = leaveTypeToUpdate.DateCreated.ToString();
 			// add to database
 			await _leaveTypeRepository.UpdateAsync(leaveTypeToUpdate);
 
