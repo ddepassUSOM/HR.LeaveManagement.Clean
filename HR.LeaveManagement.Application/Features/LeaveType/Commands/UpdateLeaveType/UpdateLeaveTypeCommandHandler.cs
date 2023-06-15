@@ -30,6 +30,8 @@ namespace HR.LeaveManagement.Application.Features.LeaveType.Commands.UpdateLeave
 			var validationResult = await validator.ValidateAsync(request);
 			if (validationResult.Errors.Any())
 			{
+				_logger.LogWarning("Validation errors in update request for {0} - {1}", nameof
+					(LeaveType), request.Id);
 				throw new BadRequestException("Invalid Leave Type", validationResult);
 			}
 			// Convert to domain entity object
