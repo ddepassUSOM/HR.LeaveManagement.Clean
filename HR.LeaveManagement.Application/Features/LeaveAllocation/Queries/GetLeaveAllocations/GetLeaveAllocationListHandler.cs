@@ -15,14 +15,23 @@ namespace HR.LeaveManagement.Application.Features.LeaveAllocation.Queries.GetLea
 		private readonly ILeaveAllocationRepository _leaveAllocationRepository;
 		private readonly IMapper _mapper;
 
-		public GetLeaveAllocationListHandler(ILeaveAllocationRepository leaveAllocationRepository, IMapper mapper)
+		public GetLeaveAllocationListHandler(ILeaveAllocationRepository leaveAllocationRepository,
+			IMapper mapper)
         {
 			this._leaveAllocationRepository = leaveAllocationRepository;
 			this._mapper = mapper;
 		}
-        public Task<List<LeaveAllocationDto>> Handle(GetLeaveAllocationListQuery request, CancellationToken cancellationToken)
+        public async Task<List<LeaveAllocationDto>> Handle(GetLeaveAllocationListQuery request, CancellationToken cancellationToken)
 		{
-			throw new NotImplementedException();
+			// To Add later
+			// - Get records for specific user
+			// - Get allocations per employee
+
+			var leaveAllocations = await
+				_leaveAllocationRepository.GetLeaveAllocationWithDetails();
+			var allocations = _mapper.Map<List<LeaveAllocationDto>>(leaveAllocations);
+
+			return allocations;
 		}
 	}
 }

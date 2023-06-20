@@ -19,8 +19,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Features\LeaveAllocation\Commands\" />
-    <Folder Include="Features\LeaveAllocation\Queries\GetLeaveAllocationDetails\" />
     <Folder Include="Features\LeaveRequest\" />
   </ItemGroup>
 
