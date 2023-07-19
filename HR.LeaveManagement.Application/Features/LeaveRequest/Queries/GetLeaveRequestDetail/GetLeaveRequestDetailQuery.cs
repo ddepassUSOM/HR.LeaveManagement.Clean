@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HR.LeaveManagement.Application.Features.LeaveAllocation.Commands.DeleteLeaveAllocation
+namespace HR.LeaveManagement.Application.Features.LeaveRequest.Queries.GetLeaveRequestDetail
 {
-	public class DeleteLeaveAllocationCommand : IRequest<Unit>
+	public class GetLeaveRequestDetailQuery : IRequest<LeaveRequestDetailsDto>
 	{
 		public int Id { get; set; }
 	}
