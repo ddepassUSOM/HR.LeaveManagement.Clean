@@ -33,7 +33,7 @@ namespace HR.LeaveManagement.Api.Middleware
 			HttpStatusCode statusCode = HttpStatusCode.InternalServerError;
 			CustomProblemDetails problem = new();
 
-			switch(ex) 
+		 	switch(ex) 
 			{
 				case BadRequestException badRequestException:
 					statusCode = HttpStatusCode.BadRequest;
