@@ -25,7 +25,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HR.LeaveManagement.Infrastr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HR.LeaveManagement.Api", "HR.LeaveManagement.Api\HR.LeaveManagement.Api.csproj", "{C863AAA6-0BB7-43A6-B2D7-04DE796E654B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HR.LeaveManagement.Application.UnitTests", "HR.LeaveManagement.Application.UnitTests\HR.LeaveManagement.Application.UnitTests.csproj", "{DD0E2301-DCBF-42EC-A276-A4384BA07BBE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HR.LeaveManagement.Application.UnitTests", "HR.LeaveManagement.Application.UnitTests\HR.LeaveManagement.Application.UnitTests.csproj", "{DD0E2301-DCBF-42EC-A276-A4384BA07BBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HR.LeaveManagement.Persistence.IntegrationTests", "HR.LeaveManagement.Persistence.IntegrationTests\HR.LeaveManagement.Persistence.IntegrationTests.csproj", "{DA1CC19B-E176-4ED5-ACFD-61D9EEE48700}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{DD0E2301-DCBF-42EC-A276-A4384BA07BBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD0E2301-DCBF-42EC-A276-A4384BA07BBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD0E2301-DCBF-42EC-A276-A4384BA07BBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA1CC19B-E176-4ED5-ACFD-61D9EEE48700}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA1CC19B-E176-4ED5-ACFD-61D9EEE48700}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA1CC19B-E176-4ED5-ACFD-61D9EEE48700}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA1CC19B-E176-4ED5-ACFD-61D9EEE48700}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -72,6 +78,7 @@ Global
 		{7BDA5BC1-8B54-4D25-8F1A-F3F9B7E6B8CB} = {05BE58A4-1C29-47B2-AB2C-72F01C96418A}
 		{C863AAA6-0BB7-43A6-B2D7-04DE796E654B} = {20803FD5-D9F9-4DB5-A024-402FEED82A55}
 		{DD0E2301-DCBF-42EC-A276-A4384BA07BBE} = {C0C47185-7C0D-4C3E-AF54-41390BC0601E}
+		{DA1CC19B-E176-4ED5-ACFD-61D9EEE48700} = {C0C47185-7C0D-4C3E-AF54-41390BC0601E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CF7FF70E-AEBE-4D22-BDB5-6196DCC41217}
