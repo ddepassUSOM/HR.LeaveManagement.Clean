@@ -62,7 +62,7 @@ namespace HR.LeaveManagement.BlazorUI.Pages.LeaveTypes
             }
         }
 
-		protected async override Task OnInitializedAsync()
+		protected override async Task OnInitializedAsync()
 		{
 			LeaveTypes = await LeaveTypeService.GetLeaveTypes();
 		}
