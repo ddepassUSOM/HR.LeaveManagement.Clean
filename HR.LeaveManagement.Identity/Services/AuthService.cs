@@ -38,7 +38,7 @@ namespace HR.LeaveManagement.Identity.Services
 			}
 
 			var result = await _signInManager.CheckPasswordSignInAsync(user, request.Password, false);
-			if (result.Succeeded)
+			if (result.Succeeded == false)
 			{
 				throw new BadRequestException($"Credentials for '{request.Email} aren't valid'.");
 			}
